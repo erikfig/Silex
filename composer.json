@@ -1,0 +1,19 @@
+{
+	"name":"webdevbr/silex",
+    "description":"Estrutura base Silex - somente para estudos",
+    "minimum-stability":"stable",
+    "authors": [
+        {
+            "name": "Erik Figueiredo",
+            "email": "erik.figueiredo@gmail.com"
+        }
+    ],
+	"require": {
+		"silex/silex": "*"
+	},
+	"autoload": {
+		"psr-0": {
+			"WebDevBr": "src"
+		}
+	}
+}
