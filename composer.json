@@ -1,6 +1,6 @@
 {
 	"name":"webdevbr/silex",
-    "description":"Estrutura base Silex - somente para estudos",
+    "description":"Estrutura base Silex",
     "minimum-stability":"stable",
     "authors": [
         {
@@ -10,11 +10,15 @@
     ],
 	"require": {
 		"php":">=5.5.0",
-		"silex/silex": "*"
+		"silex/silex": "*",
+        "doctrine/orm": "2.4.*"
 	},
 	"autoload": {
 		"psr-0": {
 			"WebDevBr": "src"
 		}
-	}
+	},
+    "config": {
+        "bin-dir": "./bin"
+    }
 }
