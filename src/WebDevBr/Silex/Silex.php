@@ -7,15 +7,15 @@ use WebDevBr\Doctrine\Doctrine;
 
 class Silex
 {
-	private $app;
+    private $app;
 
-	public function __construct($isDevMode = false)
-	{
-		$this->app = new Application();
+    public function __construct($isDevMode = false)
+    {
+        $this->app = new Application();
         $this->app['debug'] = false;
         if ($isDevMode)
-		    $this->app['debug'] = true;
-	}
+            $this->app['debug'] = true;
+    }
 
     public function setDoctrine(Doctrine $doctrine)
     {
@@ -34,8 +34,8 @@ class Silex
         $this->app->mount($name, $controller);
     }
 
-	public function run()
-	{
-		$this->app->run();
-	}
+    public function run()
+    {
+        $this->app->run();
+    }
 }

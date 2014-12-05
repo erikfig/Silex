@@ -8,7 +8,7 @@
 
 namespace WebDevBr\Silex;
 
-use WebDevBr\Silex\Silex;
+use Silex\Application;
 
 class Controllers
 {
@@ -16,7 +16,7 @@ class Controllers
     private $app;
     private $factory;
 
-    public function __construct(Silex $silex)
+    public function __construct(Application $silex)
     {
         $this->app = $silex;
         $this->factory = $this->app['controllers_factory'];
