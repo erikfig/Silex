@@ -11,7 +11,8 @@
 	"require": {
 		"php":">=5.5.0",
 		"silex/silex": "*",
-        "doctrine/orm": "2.4.*"
+        "doctrine/orm": "2.4.*",
+        "webdevbr/doctrine": "dev-master"
 	},
 	"autoload": {
 		"psr-0": {
